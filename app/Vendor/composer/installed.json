@@ -1,0 +1,44 @@
+[
+    {
+        "name": "codaxis/cakephp-bootstrap3-helpers",
+        "version": "1.1",
+        "version_normalized": "1.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ajfranzoia/cakephp-bootstrap3-helpers.git",
+            "reference": "14a3e58059726f21acd087d8c3f8b97ad1be7f42"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/ajfranzoia/cakephp-bootstrap3-helpers/zipball/14a3e58059726f21acd087d8c3f8b97ad1be7f42",
+            "reference": "14a3e58059726f21acd087d8c3f8b97ad1be7f42",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2014-07-04T21:40:53+00:00",
+        "type": "cakephp-plugin",
+        "extra": {
+            "installer-name": "Bs3Helpers"
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "augusto-cdxs",
+                "email": "augusto@codaxis.com"
+            }
+        ],
+        "description": "CakePHP highly configurable helpers for Bootstrap 3 framework.",
+        "homepage": "https://github.com/Codaxis/bootstrap3-helpers",
+        "keywords": [
+            "bootstrap",
+            "cakephp",
+            "helper"
+        ]
+    }
+]

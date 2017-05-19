@@ -1,0 +1,5 @@
+{
+    "require": {
+        "codaxis/cakephp-bootstrap3-helpers": "1.1"
+    }
+}
