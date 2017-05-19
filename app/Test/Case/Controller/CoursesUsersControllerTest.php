@@ -15,9 +15,9 @@ class CoursesUsersControllerTest extends ControllerTestCase {
 		'app.courses_user',
 		'app.user',
 		'app.faculty',
+		'app.course',
 		'app.role',
-		'app.name_prefix',
-		'app.course'
+		'app.name_prefix'
 	);
 
 /**

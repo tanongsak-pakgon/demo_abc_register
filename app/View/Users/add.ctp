@@ -1,9 +1,7 @@
 <div class="users form">
-<?php //echo $this->Form->create('User'); ?>
-<?php echo $this->Form->create('User', array('class' => 'form-horizontal', 'role' => 'form', 'type' => 'file')); ?>
+<?php echo $this->Form->create('User'); ?>
 	<fieldset>
 		<legend><?php echo __('Add User'); ?></legend>
-		<?php echo $this->Form->input('picture_path', array('label' => array('text'=>__('Picture')),'type' => 'file')); ?>
 	<?php
 		echo $this->Form->input('faculty_id');
 		echo $this->Form->input('role_id');

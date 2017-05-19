@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Application level Controller
  *
@@ -20,7 +19,6 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 App::uses('Controller', 'Controller');
-
 /**
  * Application Controller
  *
@@ -40,7 +38,6 @@ class AppController extends Controller {
             'className' => 'Bs3Helpers.Bs3Html'
         )
     );
-
     // public $components = array(
     // 'Session',
     // 'Auth' => array(
@@ -114,5 +111,4 @@ class AppController extends Controller {
         }
         return $result;
     }
-
 }

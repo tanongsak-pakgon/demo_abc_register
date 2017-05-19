@@ -1,6 +1,5 @@
 <?php
 App::uses('AppModel', 'Model');
-App::uses('BlowfishPasswordHasher', 'Controller/Component/Auth');
 /**
  * User Model
  *
@@ -63,24 +62,5 @@ class User extends AppModel {
 			'finderQuery' => '',
 		)
 	);
-	
-	public function beforeSave($options = array()) {
-		$data1 = $this->data[$this->alias]['password'];
-		if (isset($data1)) {
-			if (isset($this->data[$this->alias]['id'])) {
-				$id = $this->data[$this->alias]['id'];
-				$user = $this->findById($id);
-			} else {
-				$id = false;
-			}
-			if (!$id || $user['User']['password'] != $this->data[$this->alias]['password']) {
-				$passwordHasher = new BlowfishPasswordHasher();
-				$this->data[$this->alias]['password'] = $passwordHasher->hash($this->data[$this->alias]['password']);
-			}
-		}
-		return true;
-	}
-	
-	
 
 }
