@@ -46,6 +46,8 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			<h1><?php //echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
 		</div>
 		<div id="content">
+		
+		<?php echo $this->Html->link('ออกจากระบบ', array('controller' => 'users', 'action' => 'logout')); ?>
 
 			<?php echo $this->Flash->render(); ?>
 

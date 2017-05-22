@@ -1,0 +1,25 @@
+.form-table-left-cloumn{
+    width: 330px;
+    vertical-align: top;
+}
+
+.form-table-right-cloumn{
+    vertical-align: top;
+}
+
+
+.box_payment_ex_note {
+		width: 97%;
+		font-size:13px;
+		height: 30px;
+		color:indigo;
+		margin-left:auto;
+		margin-right:auto;
+		padding: 10px 5px 0px 20px;
+		border-color: #FF0000;
+		border-style: solid;
+		border-width:1px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		background-color:#ffc4c4;
+	}

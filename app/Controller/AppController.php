@@ -40,6 +40,7 @@ class AppController extends Controller {
     );
     public $components = array(
     'Session',
+    'Flash',
     'Auth' => array(
     'loginRedirect' => '/',
     'logoutRedirect' => '/',
@@ -49,6 +50,13 @@ class AppController extends Controller {
     'authorize' => array('Controller')
     )
     );
+    
+//     public function initialize()
+//     {
+//     	parent::initialize();
+//     	$this->loadComponent('Flash');
+//     }
+    
     public function uploadFiles($folder, $file, $itemId = null) {
         $folder_url = WWW_ROOT . $folder;
         $rel_url = $folder;
@@ -110,5 +118,12 @@ class AppController extends Controller {
             $result ['errors'] [] = "{$filename} cannot be uploaded. Acceptable file types in : " . trim($permiss, ',');
         }
         return $result;
+    }
+    
+    
+    
+    public function isAuthorized($user) {
+    	//auth check
+    	return true;
     }
 }

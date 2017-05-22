@@ -25,6 +25,7 @@ echo $this->fetch('script');
 <div class="wrapper row-offcanvas row-offcanvas-left">
 <section class="content">
 <?php echo $this->Session->flash(); ?>
+
 <?php echo $this->fetch('content'); ?>
 </section>
 </div>

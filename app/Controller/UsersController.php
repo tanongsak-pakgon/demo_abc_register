@@ -111,4 +111,25 @@ class UsersController extends AppController {
 		}
 		return $this->redirect(array('action' => 'index'));
 	}
+	
+	public function beforeFilter() {
+		$this->Auth->allow('login', 'logout', 'pin');
+		parent::beforeFilter();
+	}
+	public function login() {
+		if ($this->request->is('post')) {
+		
+			if ($this->Auth->login()) {			
+				// return $this->redirect($this->Auth->redirectUrl());
+				return $this->redirect(array('controller' => 'users','action' => 'index'));
+			}
+			
+			$this->Session->setFlash(__('Username or password is incorrect'), 'default', array(), 'auth');
+		}
+	}
+	public function logout() {
+		return $this->redirect($this->Auth->logout());
+	}
+	
+	
 }
