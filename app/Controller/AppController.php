@@ -38,17 +38,17 @@ class AppController extends Controller {
             'className' => 'Bs3Helpers.Bs3Html'
         )
     );
-    // public $components = array(
-    // 'Session',
-    // 'Auth' => array(
-    // 'loginRedirect' => '/',
-    // 'logoutRedirect' => '/',
-    // 'authenticate' => array(
-    // 'Form' => array('passwordHasher' => 'Blowfish')
-    // ),
-    // 'authorize' => array('Controller')
-    // )
-    // );
+    public $components = array(
+    'Session',
+    'Auth' => array(
+    'loginRedirect' => '/',
+    'logoutRedirect' => '/',
+    'authenticate' => array(
+    'Form' => array('passwordHasher' => 'Blowfish')
+    ),
+    'authorize' => array('Controller')
+    )
+    );
     public function uploadFiles($folder, $file, $itemId = null) {
         $folder_url = WWW_ROOT . $folder;
         $rel_url = $folder;
