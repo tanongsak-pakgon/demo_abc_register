@@ -47,8 +47,15 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		</div>
 		<div id="content">
 		
-		<?php echo $this->Html->link('ออกจากระบบ', array('controller' => 'users', 'action' => 'logout')); ?>
-
+			<div align="right">
+		
+<?php 
+if($loggedIn){
+   	echo $this->Html->link('ออกจากระบบ', array('controller' => 'users', 'action' => 'logout')); 		
+}		
+?>
+			</div>
+	
 			<?php echo $this->Flash->render(); ?>
 
 			<?php echo $this->fetch('content'); ?>

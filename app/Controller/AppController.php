@@ -51,6 +51,8 @@ class AppController extends Controller {
     )
     );
     
+    
+    
 //     public function initialize()
 //     {
 //     	parent::initialize();
@@ -124,6 +126,11 @@ class AppController extends Controller {
     
     public function isAuthorized($user) {
     	//auth check
+    	
     	return true;
+    }
+    
+    public function beforeFilter() {
+    	$this->set('loggedIn', $this->Auth->loggedIn());
     }
 }
